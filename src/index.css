@@ -176,3 +176,121 @@ body,
   color: #b45309;
   background: #fffbeb;
 }
+
+.user-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.input {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #1f2328;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  transition:
+    border-color 0.12s ease,
+    box-shadow 0.12s ease;
+}
+
+.input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
+}
+
+.input--select {
+  min-width: 96px;
+  cursor: pointer;
+}
+
+.input--sm {
+  height: 30px;
+  font-size: 13px;
+  padding: 0 8px;
+  width: 100%;
+  min-width: 90px;
+}
+
+.search {
+  flex: 1;
+  min-width: 220px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.toolbar__count {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.btn {
+  appearance: none;
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition:
+    background 0.12s ease,
+    border-color 0.12s ease,
+    color 0.12s ease;
+}
+
+.btn--primary {
+  color: #ffffff;
+  background: #0d9488;
+}
+
+.btn--primary:hover {
+  background: #0f766e;
+}
+
+.btn--primary:disabled {
+  background: #99d8d2;
+  cursor: not-allowed;
+}
+
+.btn--link {
+  height: auto;
+  padding: 4px 6px;
+  font-size: 13px;
+  color: #0d9488;
+  background: none;
+}
+
+.btn--link:hover {
+  color: #0f766e;
+  text-decoration: underline;
+}
+
+.btn--danger {
+  color: #dc2626;
+}
+
+.btn--danger:hover {
+  color: #b91c1c;
+}
+
+.empty {
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
+}
